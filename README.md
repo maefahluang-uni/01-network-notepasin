@@ -20,7 +20,10 @@ The `MockWebServer` in package `th.mfu` serves the web server in our system. It 
 4. Finally, close the client socket 
 5. Study the code in `main()` and tell me What it does?
 ```
- write your through here.
+ write your through here. Starts two servers on ports 8080 and 8081, running in separate threads.
+Shows the message “Press any key to stop the server” and waits for a key press.
+When a key is pressed, it stops both servers (using an unsafe method).
+Finally, it shuts down the program.
 ```
 6. Run the `main()`, point the web browser to `http://localhost:8080` and `http://localhost:8081`
 It should shows a simple HTML with the word such as  `Hello, Web! on Port 8080`.
